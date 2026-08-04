@@ -1,4 +1,4 @@
-# 🚀 ITI: AI Agents Development using Python (Summer 2026)
+# ITI: AI Agents Development using Python (Summer 2026)
 
 Welcome to my repository! This space documents my progress, tasks, and projects during the **Information Technology Institute (ITI) Summer Training 2026**. 
 
@@ -57,7 +57,7 @@ Here is a breakdown of the track's modules (120 Total Hours):
 ## 📞 Contact Me
 Let's connect!
 - **LinkedIn:** [Amr Reda](https://www.linkedin.com/in/amr-reda-b43aa4357)
-- **Youtube:** [Eng Amr Reda](https://www.youtube.com/@Eng_amr_reda)
+- **Youtube:** [Elhandaza](https://www.youtube.com/@Eng_amr_reda)
 
 <br>
 <p align="center">
