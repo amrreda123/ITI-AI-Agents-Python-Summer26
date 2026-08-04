@@ -1,0 +1,3 @@
+--- c,c++ => file.exe  -- complier , stand alone 
+-- js => not stand alone !!!   -- need host ? --html page
+-- script => 

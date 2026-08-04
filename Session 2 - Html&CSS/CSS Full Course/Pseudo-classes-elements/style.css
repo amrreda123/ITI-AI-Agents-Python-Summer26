@@ -1,0 +1,155 @@
+ /* ! Pseudo Classes */
+/* a{
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+a:visited{
+    color: green;
+}
+.ch:checked + label{
+    color: red;
+}
+
+div:empty{
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border: 10px solid black;
+}
+
+.in:focus{
+
+    outline: none;
+    border: 10px solid red  ;
+} */
+
+
+/* ! Pseudo Elements */
+/* .first::first-letter{
+    color: white;
+    background-color: green;
+    font-size: 40px;
+
+}
+
+.first::first-line{
+    background-color: yellow;
+}
+
+.first::selection{
+    background-color: black;
+    color: white;
+}
+.ele{
+    background-color: #eee;
+    padding: 10px;
+    position: relative;
+}
+.ele::before{
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    left: -5px;
+    top: 0;
+
+}
+
+.ele::after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent green transparent transparent;    
+    top: 40%;
+    right: -5px;
+
+
+}
+.ele::first-letter{
+    background-color: red;
+    color: white;
+    font-size: 42px;
+
+} */
+
+/* border Radius */
+/* .circle{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    border-radius: 50px;
+    border-radius: 50%;
+    
+} */
+
+/* ! Box sizing */
+/* .parent{
+    width: 600px;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    overflow: hidden;
+} */
+/* .one{ */
+    /* box-sizing: border-box; */
+    /* background-color: #eee; */
+    /* width: 300px; */
+    /* height: 20px; */
+    /* float: left; */
+    /* margin-right: 5px; */
+    /* padding: 5px; */
+    /* border: 2px solid black; */
+/* } */
+/* .two{
+    background-color: #eee;
+    width: 300px;
+    float: left;
+} */
+
+/* ! Transition */
+/* .trans{
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-delay: .5s;
+    transition-timing-function: ease-in;
+    transition: background-color 5s .5 ease-in;
+}
+.trans:hover{
+    width: 250px;
+    background-color: red;
+} */
+
+
+/* !  !important key word */
+
+
+/* ! The margin collapse */
+
+/* .parent{
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+}
+.one{
+    height: 75px;
+    width: 50%;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+.two{
+    height: 75px;
+    width: 50%;
+    background-color: blue;
+    margin-top: 40px;
+} */

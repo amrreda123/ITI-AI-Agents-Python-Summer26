@@ -1,0 +1,151 @@
+/* float & clear */
+/* .parent{
+    background-color: blue;
+    padding: 10px;
+} */
+/* .parent div{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float:left;
+
+} */
+/* .clear{ */
+    /* clear: both; */
+/* } */
+
+
+/* .last{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 100px;
+} */
+
+/* p{
+    background-color: red;
+    color: white;
+} */
+
+
+/* ! Calc() */
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.clac{
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+    width: 23.75%;
+    margin-left: 1%;
+    float: left;
+} */
+
+/* div{
+    padding-top: 10px;
+    text-align: center;
+    background-color: #eee;
+    width: calc(95% / 4);
+    float: left;
+    margin-left: 1%; 
+    
+} */
+
+/* div{
+    padding-top: 15px;
+    text-align: center;
+    background-color: #eee;
+    width: calc( (100% - 50px ) / 4);
+    float: left;
+    margin-left:10px;    
+} */
+
+/* .test{ */
+    /* width: 200px; */
+    /* height: 100px; */
+    /* background-color: red; */
+    /* opacity: .75; */
+    /* opacity: .5; */
+    /* opacity: .25; */
+/* } */
+
+/* ! Position : [Default is static] */
+body{
+height: 1000px;
+}
+/* .one, */
+/* .two{ */
+    /* width: 100px; */
+    /* height: 150px; */
+    /* padding: 10px; */
+    /* position: static; */
+/* } */
+/* .one{ */
+    /* background-color: red; */
+    /*? بالنسبة لنفسه */
+    /* position: relative; */
+    /* top: 10px; */
+    /* left: 50px; */
+    /* position: absolute; */
+    /* ? بالنسبة لاول اب شايله */
+    /* bottom: 10px; */
+    /* right: 10px; */
+
+/* } */
+/* fixed for nav bar */
+/* .two{ */
+    /* background-color: blue; */
+    /* ! ثابت علي بعد معين */
+  /* position: fixed; */
+  /* top: 100px; */
+  /* left: 50px; */
+/* } */
+
+/* sticky */
+ /* .sticky{ */
+    /* ! لازق علي بعد معين  */
+    /* position: sticky;
+    top: 10px;
+    background-color: red;
+}  */
+
+/* z-index */
+
+/* div{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    position: absolute;
+
+}
+.one{
+    background-color: red;
+    z-index: 3;
+}
+.two{
+    background-color: green;
+    z-index: 4;
+}
+.three{
+    background-color: blue;
+    z-index: 5;
+} */
+
+
+/* ! List Style */
+
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+    /* list-style-image: url(../images/); */
+    list-style: none;
+}
+
+li{
+    background-color: red;
+    
+}

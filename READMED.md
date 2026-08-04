@@ -1,0 +1,42 @@
+# 🚀 ITI: AI Agents Development using Python (Summer 2026)
+
+## 📌 About The Repository
+This repository documents my progress and projects during the **Information Technology Institute (ITI) Summer Training 2026**. It covers the entire 120-hour intensive track focused on **AI Agents Development using Python**, bridging the gap between Full-Stack Web Development fundamentals and advanced Artificial Intelligence applications.
+
+## 💻 Tech Stack & Tools
+Throughout this training, I am working with the following technologies:
+*   **Frontend:** HTML5, CSS3, JavaScript
+*   **Backend:** Python, FastAPI
+*   **Databases:** SQL, Relational Database Fundamentals
+*   **AI & Integrations:** LLMs, API Integration, AI Agents Architecture
+
+---
+
+## 📚 Course Curriculum & Modules
+
+Here is a breakdown of the track's modules (120 Total Hours):
+
+| Course Module | Total Hours | No. of Days |
+| :--- | :---: | :---: |
+| **HTML5 & CSS3** | 6 | 1 |
+| **JavaScript Essentials** | 18 | 3 |
+| **Python Programming for AI Applications** | 24 | 4 |
+| **Python Framework with FastAPI** | 18 | 3 |
+| **SQL & Relational Database Fundamentals** | 12 | 2 |
+| **AI & LLM Fundamentals** | 6 | 1 |
+| **AI-Assisted Development & API Integration** | 12 | 2 |
+| **AI Agents Development** | 18 | 3 |
+| **Freelancing** | 6 | 1 |
+| **Total** | **120** | **20** |
+
+---
+
+## 🏆 Goals & Outcomes
+*   Build robust backend APIs using **FastAPI**.
+*   Integrate modern **Large Language Models (LLMs)** into practical applications.
+*   Develop autonomous **AI Agents** to automate and solve complex workflows.
+*   Gain hands-on experience in AI-assisted development for the freelance market.
+
+## 📞 Contact
+*   **LinkedIn:** [Your LinkedIn Profile URL]
+*   **GitHub:** [Your GitHub Profile URL]

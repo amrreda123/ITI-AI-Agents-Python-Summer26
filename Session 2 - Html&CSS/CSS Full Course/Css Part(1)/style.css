@@ -1,0 +1,210 @@
+/* ! Text Properties 17,18,19,20,21*/
+/* .one{ */
+    /* color: blue; */
+    /* text-Shadow : [H-Shadow(px),V-Shadow(px),blur(px),color] */
+    /* text-shadow: 2px 2px 5px red; */
+    /* text-align: left; */
+    /* text-align: center; */
+    /* direction: ltr; */
+/* } */
+
+/* .two{ */
+    /* color: rebeccapurple; */
+    /* text-align: right; */
+    /* direction: rtl; */
+/* } */
+/* img{ */
+    /* vertical-align: top; */
+    /* vertical-align:middle; */
+    /* vertical-align: bottom; */
+/* } */
+
+/* .three{ */
+    /* background-color: red; */
+    /* text-decoration: green overline; */
+    /* text-decoration: red underline; */
+    /* text-decoration: blue  line-through; */
+    /* letter-spacing: 5px; */
+    /* text-indent: 50px; */
+    /* line-height: 2; */
+    /* word-spacing: 20px; */
+    /* width: 400px; */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+/* } */
+
+/* .three:hover{
+    overflow: visible;
+} */
+
+/* a{ */
+    /* text-decoration: none; */
+    /* color: black; */
+    /* text-transform: capitalize; */
+    /* text-transform: lowercase; */
+    /* text-transform: uppercase; */
+/* } */
+
+/*! Typography  how to import font family from google fonts 23,24,25 */
+.one{
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* font-size: 40px; */
+    /* font-style: italic; */
+    /* font-variant:small-caps; */
+    /* font-weight: 800 ; */
+}
+
+/*! Cursor 26 */
+/* .btn{
+    cursor: pointer;
+} */
+
+
+/* ! Colors & background-color 5,6 */
+body{
+    /* ?Color Name */
+    /* background-color: lightgray;     */
+    /* ? RGB(0-255,0-255,0-255,Alpha%) */
+    /* ? rgba(0-255,0-255,0-255,0-1) */
+    /* background-color: rgb(10,25,60); */
+    /* background-color: rgb(10,25,60,50%); */
+    /* background-color: rgba(50,60,10,.6); */
+
+    /* ? Heaxdecimal */
+    /* background-color: #2e2e2e; */
+
+}
+
+/*! background-image:url() , background-repeat,background-attachment, bckground-position, background-size[px,%,cover,contain]  */
+body{
+    
+    /* background-image: url(../images/Screenshot\ 2025-08-18\ 091024.png); */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* height: 800px; */
+    /* width: 100%; */
+    /* background-attachment: scroll; */
+    /* background-attachment: fixed; */
+    /* background-position: center center; */
+    /* background-position: 150px 50px; */
+    /* background-size: cover; */
+    /* background-size:contain; */
+    /* background-size:500px 700px; */
+    /* background-size:50% 25%; */
+
+}
+
+/*! Padding Vs Margin 7,8*/
+.margin{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-left: 50px;
+
+}
+
+/*! border , outline 9,10*/
+/* .margin{ */
+   /* border-style: solid;
+   border-width: 2px;
+   border-color: blue; */
+   /* or  */
+   /* border:5px solid green */
+/* } */
+
+/* 
+.margin{
+    outline: 5px solid gray;
+} */
+
+/*! Block , inline , inline-block 11 */
+
+/* ! block 
+1)- take full-width if you don't give it a width
+2)- respect padding margin width height
+*/
+
+ /* .display{
+    display: block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}  */
+/* !inline
+1)- don't respect width,height
+2)- respect margin and padding [right-left only]
+*/
+/* .display{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+
+/* ! inline-block 
+1)-respect margin,padding,width,height*/
+
+/* .display{
+    display: inline-block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+
+
+/* !diplay: none Vs visibility:hidden 12*/
+.visibility{
+    background-color: aqua;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+/*! Multiple Selector 13 */
+/* .btn,
+.margin,
+.one{
+
+} */
+
+/*! Nesting  14*/
+div p {
+    /* paragraph inside div */
+}
+
+/* ! width, height 15 */
+.visibility{
+    width: 200px;
+    /* min-width: 100px; */
+    /* max-width: 200px; */
+    /* width: fit-content; */
+    height: 100px;
+}
+
+/* ! over-flow  16*/
+.visibility{
+/* overflow: hidden ; */
+/* overflow: scroll; */
+/* overflow: auto; */
+
+/* overflow-y: hidden; */
+/* overflow-x: hidden;  */
+}

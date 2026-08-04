@@ -1,0 +1,431 @@
+<!-- <OpeningTag>Content</ClosingTag> -->
+<pre>
+  HTML: Hyper Text Markup Language 
+        It isn't a programming Language 
+        It use to build the structure(Skelton) of the web page (documnet)    
+</pre>
+
+<!-- <!DOCTYPE html> -->
+ <!-- Directive -->
+<!-- This line for declaration of the version of HTML5  -->
+
+  <!-- !HTML Root Tag -->
+    <!-- tag is the container for all other HTML elements.  -->
+<html>
+  <!-- !Head Tag Meta Data -->
+  <head>
+
+    <!--! Title For Page -->
+    <!-- <title>Python</title> -->
+
+    <!-- ! Charset -->
+    <!-- <meta charset="UTF-8">  -->
+
+    <!--! Description -->
+    <!-- <meta name="description" content="HTML" /> -->
+
+     <!--! Keywords -->
+    <!-- <meta name="keywords" content="HTML , CSS , JS , JavaScript" /> -->
+
+    <!-- !http-equiv -->
+    <!-- <meta http-equiv="refresh" content="2" /> -->
+
+    <!-- ! linke Css File -->
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+
+    <!--! Link Js File -->
+    <!-- <script src="./script.js"></script> -->
+  </head>
+
+
+  <!-- !Attributes -->
+    <!-- Additional attributes in an element that express it with information and distinguish it from others 
+    There are 2 types of Attributes 
+    1-Global Attributes
+    2-Element Attributes -->
+  
+    <!-- ! Body -->
+      <!-- Content For User -->
+    <body>
+
+      <!--! Dealing With Text -->
+      <div>
+    <!--! 1)-Plain Text  -->
+          <!-- Hello World! -->
+
+    <!--! 2)- Heading h1 , h2 ...... h6 -->
+    <!-- Block Element -->
+    <!-- <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h3>Hello World!</h3>
+    <h4>Hello World!</h4>
+    <h5>Hello World!</h5>
+    <h6>Hello World!</h6>  -->
+
+    <!--! 3)- Paragaph p -->
+    <!-- Block Element -->
+    <!-- <p >Lorem ipsum dolor sit amet.</p> -->
+    <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+
+    <!-- ! 4)- Span -->
+     <!-- Inline Element -->
+    <!-- <span>Lorem ipsum dolor sit amet.</span> -->
+    <!-- <span>Lorem ipsum dolor sit amet.</span> -->
+    
+    <!-- ! 5)- Font Tag-->
+     <!--Inline Element  -->
+    <!-- <font size="16px" color="red">This is text</font> -->
+    <!-- <font size="16px" color="blue">This is text</font> -->
+
+      </div>
+  
+  <!-- ! Text Formating using Tags -->
+     <div>
+       <!-- b & Strong -->
+
+       <!-- <center>
+         <p>This is my <b>Web Site</b></p>
+      <p>This is my <strong>Web Site</strong></p>
+    </center> -->
+
+    <!-- i & em -->
+       <!-- <center>
+         <p>This is my <i>Web Site</i></p>
+         <p>This is my <em>Web Site</em></p>
+        </center> -->
+
+        <!-- Mark -->
+        <!-- <center>
+          <p>This is my <mark>Web Site</mark></p>
+        </center> -->
+    
+    <!-- u-->
+    <!-- <center>
+      <p>This is my <u>Web Site</u></p>
+    </center> -->
+    
+    <!-- small -->
+    <!-- <center>
+      <p>This is my <small>Web Site</small></p>
+    </center> -->
+    
+    <!-- del -->
+    <!-- <center>
+      <p>This is my <del>Web Site</del></p>
+    </center> -->
+    
+    <!-- ins -->
+    <!-- <center>
+      <p>This is my <ins>Web Site</ins></p>
+    </center> -->
+    
+    <!-- subscript & superscript -->
+    <!-- <center>
+      <p>H<sub>2</sub>o</p>
+    </center>
+    <center> 
+      <p>X<sup>2</sup></p>
+    </center> -->
+     </div>
+
+
+
+   <!-- ! Dealing With Links -->
+    <!-- Inline Block -->
+     <div>
+
+       <!-- !Go to Three Places -->
+       
+       <!-- ? Inside our project -->
+       <!-- <a href="test.html" target="_blank">test</a> -->
+       
+       <!-- ? Outside my project -->
+       <!-- target & title  -->
+       <!-- <a href="https://www.google.com/" target="_blank" title="GO To Google">Google</a>  -->
+       
+       <!--? In the same file -->
+       <!-- <a href="#one">go to one</a>   -->
+       <!-- <pre>
+         <p id="one">This is One</p>
+        </pre> -->
+        
+        <!-- ? mailto , tel -->
+        <!-- <a href="mailto:BlaBlaBla@gmail.com" target="_blank">contact me</a>
+        <a href="tel:01222365495">call Me</a> -->
+        
+      </div>
+
+<!--! Images , Audio & Video-->
+ <!--? path  absolute path & relative path-->
+ <!-- <img src="./assets/Untitled.png" alt="client-server" width="300px" height="300px"> -->
+ 
+ <!-- ! Audio -->
+<!-- <audio src="./assets/file_example_MP3_1MG.mp3" controls autoplay muted loop></audio>  -->
+<!-- or -->
+ <!-- <audio controls autoplay muted>
+  <source src="./assets/file_example_MP3_1MG.mp3" type="audio/mpeg" >
+ </audio> -->
+
+ <!--! Video  -->
+ <!-- <video src="./assets/file_example_MP4_1920_18MG.mp4" width="400px" height="200px" controls autoplay muted loop
+ poster="./assets/entities.png" ></video> -->
+
+<!-- ! Lists  ol ul dl-->
+       <!--? unordered List  -->
+    <!-- <ul>
+      <li>HTML</li>
+      <li><a href="https://www.google.com">google</a></li>
+      <li>JS</li>
+      <li>Python</li>
+    </ul>  -->
+
+    <!--? Ordered List type,start,reversed  -->
+    <!-- <ol type="A" start="5" reversed >
+          <li>HTML</li>
+        <ul>
+          <li>HTMl</li>
+          <li>
+            Lectures
+            <ol>
+              <li>One</li>
+              <li>Two</li>
+          </ol>
+        </li>
+          <li>JS</li>
+        </ul>
+    </ol>  -->
+
+
+      <!-- ? Dl => Description List ,DT => Description Term  , DD => Description of The Term -->
+      <!-- <dl>
+        <dt>HTML</dt>
+          <dd>Hyper Text markup language</dd>
+      </dl> -->
+    <!-- !tabel -->
+    <!-- Table Tags
+    1)- thead
+    2)- tbody
+    3)- tfoot
+    4)- th
+    5-)- tr
+    6)- td
+    7)- caption -->
+    
+    <!-- <table border="1px">
+      <caption><strong>Student Marks</strong></caption>
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Last</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Omar</td>
+          <td rowspan="2">Ahmed</td>
+          <td>85</td>
+        </tr>
+         <tr>
+          <td>Mohame</td> -->
+          <!-- <td>Ahmed</td> -->
+          <!-- <td>75</td>
+        </tr>
+         <tr>
+          <td>Ashraf</td>
+          <td>Yasser</td>
+          <td>55</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td>215</td>
+        </tr>
+      </tfoot>
+    </table> -->
+
+<!-- ! Br & Hr -->
+ <!-- <br>
+ <hr> -->
+
+ <!--! Div -->
+ <!-- <div class="Book"> 
+    <h3>book title</h3> 
+    <p>Book Description</p> 
+    <span>$100</span> 
+</div>  -->
+     <!--!Form & inputs -->
+     <!-- <form action="test.html" method="" novalidate target="_blank"> 
+      <label for="fname">First Name</label><br>
+      <input required type="text" placeholder="First Name" name="fname" id="fname"><br>
+
+      <label for="password">Password</label><br>
+      <input type="password" placeholder="password" id="password" name="password" ><br>
+
+      <label for="email" >Email</label><br>
+      <input type="email" placeholder="Enter Your Email" id="email" name="email"><br>
+
+      <label for="number">number</label> <br>
+      <input type="number" min="0" max="100" step="10" value="0" id="number"> <br>
+     
+      <label for="range">range</label> <br>
+      <input type="range" id="range" min="0" max="100" step="10" value="0"> <br>
+
+      <label>color</label> <br>
+      <input type="color" name="color"><br>
+      <label >Upload</label> <br>
+      <input type="file">    <br> 
+      <label >search</label> <br>
+      <input type="search">  <br>
+      <label >URL</label>    <br>
+      <input type="url">     <br>
+      <label >date</label>   <br>
+      <input type="date">    <br>
+      <label >time</label>   <br>
+      <input type="time">    <br>
+      <label >month</label>  <br>
+      <input type="month">   <br>
+      <input type="submit" value="Submit"><br><br>
+      <input type="reset" value="Reset"><br>
+     </form>
+     <hr> -->
+
+     <!-- !============================================================================= -->
+     <!-- <form action=""> -->
+      <!-- <input type="text" required placeholder="UserName" name="user" value="Amr" readonly><br><br> -->
+      <!-- ! Not Send In Query String -->
+      <!-- <input type="email" required placeholder="Write a Vaild Email" value="Amr@gmail"  name="Email" disabled> <br><br>
+
+      <input type="text" placeholder="Subject" name="sub" autofocus> <br><br>
+
+      <input type="password" required placeholder="Write a Complex password" name="pass"  minlength="10" maxlength="20"> <br><br>
+
+      <input type="submit" value="Ok">
+     </form> -->
+
+<!--! Button -->
+ <!-- <button type="submit">Submit</button> -->
+
+
+<!-- ! Entities  -->
+<!-- <img src="./assets/image.png" alt=""> -->
+
+
+<!-- ! Radio  -->
+ <!--? uses to make a group of options, you can choose only one of them -->
+
+<!-- <div>
+  <form action="">
+
+    <label for="win">
+      <input type="radio" name="OS" id="win" value="Windows">
+      Windows <br>
+      
+    </label>
+  <label for="linux">
+    <input type="radio" name="OS" id="linux" value="Linux" checked>
+    Linux
+    <br>
+  </label>
+  
+  <label for="mac">
+    <input type="radio" name="OS" id="mac" value="Mac" >
+    Mac
+  </label>
+    <br>
+    <input type="submit" value="Ok">
+</form>
+
+</div> -->
+
+<!-- !Checkbox  -->
+ <!-- ? uses to make a group of options, you can choose more than one option at the same time  -->
+ <!-- <div>
+  <label for="win">
+    <input type="checkbox" name="OS" id="win" value="Windows" checked>
+    Windows <br>
+
+  </label>
+  <label for="linux">
+    <input type="checkbox" name="OS" id="linux" value="Linux" checked>
+    Linux
+    <br>
+  </label>
+  <label for="mac">
+    <input type="checkbox" name="OS" id="mac" value="Mac" >
+    Mac
+    <br>
+  </label>
+</div> -->
+
+
+<!-- ! Select -->
+ <!-- ?  uses to create a drop-down list -->
+<!-- 
+  <div>
+    <label for="webTechnologies">Web Technologies</label> 
+    <select name="" id="webTechnologies" >
+      
+      <select name="" id="webTechnologies" multiple>  => for allow Multiple choice
+        <optgroup label="Fornt End Technologies">
+          <option value="1" selected>HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JS</option>
+        </optgroup>
+        <optgroup label="Back End Technologies">
+          <option value="4">Python</option>
+          <option value="5">No-SQL</option>
+          <option value="6">WEB API</option>
+        </optgroup>
+      </select>
+    </div>
+  -->
+
+<!--! Data-List -->
+<!-- <div> 
+<label for="">Data-List</label> 
+<input list="Programming" name="Prog" /> 
+<datalist id="Programming"> 
+<option value="Python"> 
+<option value="PHP"> 
+<option value="C"> 
+<option value="C#"> 
+<option value="C++"> 
+<option value="Scala"> 
+</datalist>  
+</div> -->
+
+
+ <!-- ! Text Area -->
+  <!-- <label for="feedback">Your Feed Back </label>
+  <textarea name="feedback" id="feedback" cols="30" ows="10"></textarea> -->
+
+  <!--! Quote -->
+  <!-- <q>This is Quote</q> -->
+
+  <!-- ! Code -->
+   <!-- <pre>
+     <code>
+       x=5;
+       y=6;
+       z=x+y;
+      </code>
+    </pre> -->
+
+<!-- ! Semantics Elements  -->
+<!--? elements with a meaning. A semantic element clearly describes its meaning to both the browser and the developer.  -->
+<ul>
+  <li>header</li>
+  <li>nav</li>
+  <li>section</li>
+  <li>aside</li>
+  <li>article</li>
+  <li>figure</li>
+  <li>figcaption</li>
+  <li>footer</li>
+  <li>main</li>
+  <li><img src="./assets/semantic Tags.png" width="400px" height="300px" alt=""></li>
+</ul>
+</body>
+</html>

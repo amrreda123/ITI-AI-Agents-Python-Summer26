@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* !Parent Properties */
+.parent {
+width: 1000px;
+height: 400px;
+background-color: black;
+display: grid;
+/* grid-template-columns: 100px 100px 100px; */
+/* grid-template-columns: repeat(4 , 100px); */
+/* grid-template-columns: 100px 25% auto; */
+grid-template-columns: repeat(4 , auto);
+/* grid-template-columns: 100px 25% auto 1fr; */
+/* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+/* grid-template-rows: 100px 25% auto 1fr; */
+/* grid-template-rows: repeat(4, 1fr); */
+grid-template-rows: repeat(4, 50px);
+/* row-gap: 5px; */
+  /* column-gap: 5px; */
+ gap: 10px;
+  /* justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly; */
+
+   /* align-content: flex-start;
+   align-content: flex-end;
+   align-content: center;
+   align-content: space-around;
+   align-content: space-between;
+   align-content: space-evenly; */
+
+   
+
+   
+}
+
+ /* .parent div {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 32px;
+}  */
+
+
+
+
+.container {
+  color: white;
+  background-color: #333;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 50px 1fr 50px;
+  gap: 10px;
+  grid-template-areas:
+    " logo logo logo nav nav nav nav nav nav nav"
+    "section section section section section section section aside aside aside"
+    "footer footer footer footer footer footer footer footer footer footer";
+}
+
+h2 {
+  grid-area: logo;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: lightblue;
+}
+
+section {
+  grid-area: section;
+  display: flex;
+  background-color: navy;
+}
+aside {
+  grid-area: aside;
+  background-color: aqua;
+}
+footer {
+  grid-area: footer;
+  background-color: blueviolet;
+}
+
+section div {
+  width: calc( (100% - 40px ) / 3);
+  margin-left: 10px;
+  height: 40%;
+  background-color: lightpink;
+}
