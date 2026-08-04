@@ -4,7 +4,7 @@
 This repository documents my progress and projects during the **Information Technology Institute (ITI) Summer Training 2026**. It covers the entire 120-hour intensive track focused on **AI Agents Development using Python**, bridging the gap between Full-Stack Web Development fundamentals and advanced Artificial Intelligence applications.
 
 ## 🖼️ Track Image
-![Track](./assets/track.jpeg)
+![Track](./assets/Track.jpeg)
 
 > ضع صورة `track.png` داخل مجلد `assets/` أو عدّل المسار هنا إذا كانت الصورة في مكان آخر.
 
