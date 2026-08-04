@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lab 1</title>
+</head>
+<body>
+    <h1>Welcome to JavaScript Lab 1</h1>
+    
+    <script>
+        console.log("3-b: Value of number1 before external script:");
+        try {
+            console.log(number1); 
+        } catch (e) {
+            console.log("Error:", e.message); 
+        }
+    </script>
+
+    <script src="External.js"></script>
+
+    <script>
+        console.log("3-c: Value of number1 after external script:");
+        console.log(number1); 
+    </script>
+
+    <script>
+        console.log("----- Q4: Mixed Operations -----");
+        console.log("a- number1+number2:", number1 + number2);
+        console.log("b- flag+ number1:", flag + number1);
+        console.log("c- firstName+flag:", firstName + flag);
+        console.log("d- number1+firstName:", number1 + firstName);
+        console.log("e- number1+number2+firstName:", number1 + number2 + firstName);
+        console.log("f- number1+firstName+number2:", number1 + firstName + number2);
+        console.log("g- number1*flag:", number1 * flag);
+        console.log("h- number1/lastName:", number1 / lastName);
+        
+        console.log("i- Full Name:", `${firstName} ${middleName} ${lastName}`);
+        
+        console.log("j- Array as table:");
+        var arr = [10, 20, 30, 40];
+        console.table(arr);
+
+        console.log("----- Q5: Odd or Even -----");
+        var num = 5;
+        if (num % 2 === 0) {
+            console.log(num + " is Even");
+        } else {
+            console.log(num + " is Odd");
+        }
+
+        console.log("----- Q6: 1 to 10 Loop -----");
+        for (var i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+
+        console.log("----- Q7: +ve, -ve or zero -----");
+        var checkNum = -5;
+        if (checkNum > 0) {
+            console.log(checkNum + " is +ve");
+        } else if (checkNum < 0) {
+            console.log(checkNum + " is -ve");
+        } else {
+            console.log(checkNum + " is zero");
+        }
+
+        console.log("----- Q8: Multiplication Table -----");
+        var multNum = 3;
+        for (var i = 1; i <= 12; i++) {
+            console.log(`${multNum} * ${i} = ${multNum * i}`);
+        }
+
+        console.log("----- Q9: Day of the Week -----");
+        var dayIndex = 1;
+        switch (dayIndex) {
+            case 1: console.log("Sunday"); break;
+            case 2: console.log("Monday"); break;
+            case 3: console.log("Tuesday"); break;
+            case 4: console.log("Wednesday"); break;
+            case 5: console.log("Thursday"); break;
+            case 6: console.log("Friday"); break;
+            case 7: console.log("Saturday"); break;
+            default: console.log("Invalid Day");
+        }
+
+        console.log("----- Q10: Weekend or Weekday -----");
+        var dayNum = 6; 
+        switch(dayNum) {
+            case 6:
+            case 7: 
+                console.log("Weekend"); 
+                break;
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                console.log("Weekday");
+                break;
+            default:
+                console.log("Invalid day number");
+        }
+    </script>
+</body>
+</html>

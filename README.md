@@ -1,23 +1,34 @@
-# ITI: AI Agents Development using Python (Summer 2026)
+# 🚀 ITI: AI Agents Development using Python (Summer 2026)
 
-## 📌 About The Repository
-This repository documents my progress and projects during the **Information Technology Institute (ITI) Summer Training 2026**. It covers the entire 120-hour intensive track focused on **AI Agents Development using Python**, bridging the gap between Full-Stack Web Development fundamentals and advanced Artificial Intelligence applications.
+Welcome to my repository! This space documents my progress, tasks, and projects during the **Information Technology Institute (ITI) Summer Training 2026**. 
 
-## 🖼️ Track Image
+The 120-hour intensive track focuses on **AI Agents Development using Python**, bridging the gap between Full-Stack Web Development fundamentals and advanced Artificial Intelligence applications.
+
+## 🖼️ Track Overview
 ![Track](./assets/Track.jpeg)
 
+---
 
 ## 💻 Tech Stack & Tools
-Throughout this training, I am working with the following technologies:
-*   **Frontend:** HTML5, CSS3, JavaScript
-*   **Backend:** Python, FastAPI
-*   **Databases:** SQL, Relational Database Fundamentals
-*   **AI & Integrations:** LLMs, API Integration, AI Agents Architecture
+Throughout this training, I am mastering the following technologies:
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Backend:** Python, FastAPI
+- **Databases:** SQL, Relational Database Fundamentals
+- **AI & Integrations:** LLMs, API Integration, AI Agents Architecture
+
+---
+
+## 📂 Repository Structure
+Here is a log of my sessions and labs:
+- 📁 **[Session 1 - Html&CSS](./Session%201%20-%20Html&CSS)**: Introduction to HTML and CSS basics.
+- 📁 **[Session 2 - Html&CSS](./Session%202%20-%20Html&CSS)**: Advanced HTML5 and CSS3 styling.
+- 📁 **[Session 3 - JS](./Session%203%20-%20JS)**: JavaScript fundamentals and problem-solving labs.
+
+*(This section will be continuously updated as the training progresses).*
 
 ---
 
 ## 📚 Course Curriculum & Modules
-
 Here is a breakdown of the track's modules (120 Total Hours):
 
 | Course Module | Total Hours | No. of Days |
@@ -36,11 +47,19 @@ Here is a breakdown of the track's modules (120 Total Hours):
 ---
 
 ## 🏆 Goals & Outcomes
-*   Build robust backend APIs using **FastAPI**.
-*   Integrate modern **Large Language Models (LLMs)** into practical applications.
-*   Develop autonomous **AI Agents** to automate and solve complex workflows.
-*   Gain hands-on experience in AI-assisted development for the freelance market.
+- Build robust backend APIs using **FastAPI**.
+- Integrate modern **Large Language Models (LLMs)** into practical applications.
+- Develop autonomous **AI Agents** to automate and solve complex workflows.
+- Gain hands-on experience in AI-assisted development for the freelance market.
 
-## 📞 Contact
-*   **LinkedIn:** [https://www.linkedin.com/in/amr-reda-b43aa4357]
-*   **Youtube:** [https://www.youtube.com/@Eng_amr_reda]
+---
+
+## 📞 Contact Me
+Let's connect!
+- **LinkedIn:** [Amr Reda](https://www.linkedin.com/in/amr-reda-b43aa4357)
+- **Youtube:** [Eng Amr Reda](https://www.youtube.com/@Eng_amr_reda)
+
+<br>
+<p align="center">
+  <i>Developed with ❤️ by Amr Reda</i>
+</p>
