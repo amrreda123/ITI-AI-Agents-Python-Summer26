@@ -6,8 +6,6 @@ This repository documents my progress and projects during the **Information Tech
 ## 🖼️ Track Image
 ![Track](./assets/Track.jpeg)
 
-> ضع صورة `track.png` داخل مجلد `assets/` أو عدّل المسار هنا إذا كانت الصورة في مكان آخر.
-
 
 ## 💻 Tech Stack & Tools
 Throughout this training, I am working with the following technologies:
