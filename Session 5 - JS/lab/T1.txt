@@ -1,0 +1,7 @@
+Create an object student with the following properties: name, age, subjects: an array of objects with subject names and scores out of 100. Example:
+[{ subject: "Math", score: 85 }, { subject: "English", score: 90 }]
+
+--Create a function getTotalGrade that calculates the total grade (percentage) based on the scores. 
+& create getAverageGrade The total grade should be the average score of all subjects.
+
+--Clone the student object into a new object studentClone
