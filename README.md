@@ -23,6 +23,9 @@ Here is a log of my sessions and labs:
 - 📁 **[Session 1 - Html&CSS](./Session%201%20-%20Html&CSS)**: Introduction to HTML and CSS basics.
 - 📁 **[Session 2 - Html&CSS](./Session%202%20-%20Html&CSS)**: Advanced HTML5 and CSS3 styling.
 - 📁 **[Session 3 - JS](./Session%203%20-%20JS)**: JavaScript fundamentals and problem-solving labs.
+- 📁 **[Session 4 - JS](./Session%204%20-JS)**: JavaScript logic and advanced concepts.
+- 📁 **[Session 5 - JS](./Session%205%20-%20JS)**: DOM manipulation and events.
+- 📁 **[Session 6 - JS](./Session%206%20-%20JS)**: Array methods, string manipulation, and custom functions.
 
 *(This section will be continuously updated as the training progresses).*
 
