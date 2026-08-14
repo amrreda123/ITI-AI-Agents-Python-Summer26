@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To Do Organizer</h1>
+        <section>
+            <form action="#" id="task-form" method="get">
+                <input type="text" id="task-input" placeholder="Enter Task Name">
+                <button type="submit">Add</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Done</th>
+                        <th>Task</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tasks-table">
+                </tbody>
+                <tfoot id="tasks-footer">
+                    <tr>
+                        <td colspan="3"><button id="delete-all">Delete All</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 900px;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+h1 {
+    color: #8c2a2a;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    outline: none;
+    color: #333;
+}
+
+input[type="text"]::placeholder {
+    color: #888;
+}
+
+button[type="submit"] {
+    padding: 12px 30px;
+    background-color: #7d7d7d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #666;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #cc0000;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#tasks-footer td {
+    border: none;
+    padding-top: 20px;
+}
+
+#delete-all {
+    padding: 10px 20px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#delete-all:hover {
+    background-color: #aa0000;
+}
+
+.delete-btn {
+    padding: 0;
+    background-color: transparent;
+    color: #cc0000;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: #aa0000;
+    transform: scale(1.1);
+}

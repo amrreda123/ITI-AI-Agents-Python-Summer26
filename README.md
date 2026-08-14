@@ -26,6 +26,8 @@ Here is a log of my sessions and labs:
 - 📁 **[Session 4 - JS](./Session%204%20-JS)**: JavaScript logic and advanced concepts.
 - 📁 **[Session 5 - JS](./Session%205%20-%20JS)**: DOM manipulation and events.
 - 📁 **[Session 6 - JS](./Session%206%20-%20JS)**: Array methods, string manipulation, and custom functions.
+- 📁 **[Session 7 - JS](./Session%207%20-%20JS)**: Advanced DOM manipulation, To-Do list organizer.
+- 📁 **[Session 8 - PY](./Session%208%20-%20PY)**: Python foundations for AI applications, variables, strings, lists, tuples, and dictionaries.
 
 *(This section will be continuously updated as the training progresses).*
 

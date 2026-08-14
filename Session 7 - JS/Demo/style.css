@@ -1,0 +1,46 @@
+.b.a
+{
+    background-color: aqua;
+}
+
+.bGrey {
+    background-color: lightgray;
+}
+
+.bPink {
+    background-color: pink;
+}
+
+
+.fontLarge  {
+    font-size: large;
+}
+
+.fontGreen {
+    color: green;
+}
+
+.fontBlue{
+    color: Blue;
+}
+
+
+img {
+    width: 200px;
+    height: 200px;
+    /* position: absolute;  */
+}
+
+/* parent child */
+/* ol li{
+    background-color: pink;
+} */
+/* input[type=text][name=ageText]
+{
+
+} */
+ .zooming
+ {
+    background-color: green;
+    font-size: 20px;
+ }
