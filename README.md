@@ -28,6 +28,7 @@ Here is a log of my sessions and labs:
 - 📁 **[Session 6 - JS](./Session%206%20-%20JS)**: Array methods, string manipulation, and custom functions.
 - 📁 **[Session 7 - JS](./Session%207%20-%20JS)**: Advanced DOM manipulation, To-Do list organizer.
 - 📁 **[Session 8 - PY](./Session%208%20-%20PY)**: Python foundations for AI applications, variables, strings, lists, tuples, and dictionaries.
+- 📁 **[Session 9 - PY](./Session%209%20-%20PY)**: Python Lab 2, Lists, Dictionaries & Scope in Practice.
 
 *(This section will be continuously updated as the training progresses).*
 
