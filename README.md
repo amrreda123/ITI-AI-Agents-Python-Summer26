@@ -126,7 +126,7 @@ Overall Progress: ████████████░░░░░░░░�
 | Session | Topic | Description |
 | :--- | :--- | :--- |
 | 📁 [Session 3](./Session%203%20-%20JS) | JS Fundamentals | Variables, data types, operators, control flow, and problem-solving labs |
-| 📁 [Session 4](./Session%204%20-JS) | JS Advanced Concepts | Functions, scope, closures, and advanced logic |
+| 📁 [Session 4](./Session%204%20-%20JS) | JS Advanced Concepts | Functions, scope, closures, and advanced logic |
 | 📁 [Session 5](./Session%205%20-%20JS) | DOM Manipulation | DOM traversal, event handling, and dynamic page interactions |
 | 📁 [Session 6](./Session%206%20-%20JS) | Arrays & Strings | Array methods, string manipulation, and custom utility functions |
 | 📁 [Session 7](./Session%207%20-%20JS) | Advanced DOM Projects | Advanced DOM manipulation, interactive To-Do list organizer |
@@ -143,11 +143,23 @@ Overall Progress: ████████████░░░░░░░░�
 | 📁 [Session 9](./Session%209%20-%20PY) | Python Data Structures | Lists, dictionaries, scope, functions, and practical exercises |
 | 📁 [Session 10](./Session%2010%20-%20PY) | Python Day 3 | Functions, modules, and advanced Python concepts |
 | 📁 [Session 11](./Session%2011%20-%20PY) | OOP in Python | Classes, inheritance, polymorphism, encapsulation, and properties |
+| 📁 [Session 12](./Session%2012%20-%20PY) | Advanced Python | Advanced Python topics and practice |
+| 📁 [Session 13](./Session%2013%20-%20PY) | Python Practical | Practical Labs and Demos |
 
 </details>
 
 <details>
-<summary><strong>🚀 Phase 4 — FastAPI, SQL, AI & Agents (Upcoming)</strong></summary>
+<summary><strong>🗄️ Phase 4 — SQL & Relational Databases</strong></summary>
+<br/>
+
+| Session | Topic | Description |
+| :--- | :--- | :--- |
+| 📁 [Session 14](./Session%2014%20-%20PostgreSQL) | PostgreSQL Day 1 | Introduction to PostgreSQL and Relational Databases |
+
+</details>
+
+<details>
+<summary><strong>🚀 Phase 5 — FastAPI, AI & Agents (Upcoming)</strong></summary>
 <br/>
 
 > 🔜 Coming soon as the training progresses...
