@@ -98,7 +98,7 @@ Overall Progress: ████████████░░░░░░░░�
 | 🟢 JavaScript Essentials | ✅ Completed | 18/18 |
 | 🟢 Python Programming for AI | ✅ Completed | 24/24 |
 | ⚪ Python Framework (FastAPI) | ⏳ Upcoming | 0/18 |
-| ⚪ SQL & Relational Databases | ⏳ Upcoming | 0/12 |
+| 🟢 SQL & Relational Databases | ✅ Completed | 12/12 |
 | ⚪ AI & LLM Fundamentals | ⏳ Upcoming | 0/6 |
 | ⚪ AI-Assisted Dev & API Integration | ⏳ Upcoming | 0/12 |
 | ⚪ AI Agents Development | ⏳ Upcoming | 0/18 |
@@ -155,6 +155,7 @@ Overall Progress: ████████████░░░░░░░░�
 | Session | Topic | Description |
 | :--- | :--- | :--- |
 | 📁 [Session 14](./Session%2014%20-%20PostgreSQL) | PostgreSQL Day 1 | Introduction to PostgreSQL and Relational Databases |
+| 📁 [Session 15](./Session%2015-%20PostgreSQL) | PostgreSQL Day 2 | Constraints, Relationships, Referential Integrity, and Labs |
 
 </details>
 
@@ -178,7 +179,7 @@ Overall Progress: ████████████░░░░░░░░�
 | 02 | **JavaScript Essentials** | 18 | 3 | ✅ |
 | 03 | **Python Programming for AI** | 24 | 4 | ✅ |
 | 04 | **Python Framework (FastAPI)** | 18 | 3 | ⏳ |
-| 05 | **SQL & Relational Databases** | 12 | 2 | ⏳ |
+| 05 | **SQL & Relational Databases** | 12 | 2 | ✅ |
 | 06 | **AI & LLM Fundamentals** | 6 | 1 | ⏳ |
 | 07 | **AI-Assisted Dev & API Integration** | 12 | 2 | ⏳ |
 | 08 | **AI Agents Development** | 18 | 3 | ⏳ |
