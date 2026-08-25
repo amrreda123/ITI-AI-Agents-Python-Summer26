@@ -1,0 +1,5 @@
+name,quiz1,quiz2,average,passed,study_group
+Amir,90,85.0,87.5,True,A
+Sara,70,,65.0,False,B
+Leo,82,77.0,79.5,True,A
+Nina,60,55.0,57.5,False,B
