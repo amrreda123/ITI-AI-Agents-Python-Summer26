@@ -89,7 +89,7 @@ The program bridges the gap between **Full-Stack Web Development** fundamentals 
 ## 📊 Training Progress
 
 ```
-Overall Progress: ████████████░░░░░░░░░  55% (66/120 hours)
+Overall Progress: ██████████████░░░░░░░  70% (84/120 hours)
 ```
 
 | Phase | Status | Hours |
@@ -99,9 +99,9 @@ Overall Progress: ████████████░░░░░░░░�
 | 🟢 Python Programming for AI | ✅ Completed | 24/24 |
 | ⚪ Python Framework (FastAPI) | ⏳ Upcoming | 0/18 |
 | 🟢 SQL & Relational Databases | ✅ Completed | 12/12 |
-| ⚪ AI & LLM Fundamentals | ⏳ Upcoming | 0/6 |
-| ⚪ AI-Assisted Dev & API Integration | ⏳ Upcoming | 0/12 |
-| ⚪ AI Agents Development | ⏳ Upcoming | 0/18 |
+| 🟢 AI & LLM Fundamentals | ✅ Completed | 6/6 |
+| 🟢 AI-Assisted Dev & API Integration | ✅ Completed | 12/12 |
+| 🟡 AI Agents Development | ⏳ In Progress | 6/18 |
 | ⚪ Freelancing | ⏳ Upcoming | 0/6 |
 
 ---
@@ -160,10 +160,15 @@ Overall Progress: ████████████░░░░░░░░�
 </details>
 
 <details>
-<summary><strong>🚀 Phase 5 — FastAPI, AI & Agents (Upcoming)</strong></summary>
+<summary><strong>🚀 Phase 5 — AI & Agents Development</strong></summary>
 <br/>
 
-> 🔜 Coming soon as the training progresses...
+| Session | Topic | Description |
+| :--- | :--- | :--- |
+| 📁 [Session 17](./Session%2017%20-%20GenAI_Prompt_Engineering) | AI & LLM Fundamentals | Generative AI concepts and Prompt Engineering |
+| 📁 [Session 18](./Session%2018%20-%20AIDev_APIIntegration) | API Integration Day 1 | AI-Assisted Development and API Integration |
+| 📁 [Session 19](./Session%2019%20-%20AIDev_APIIntegration) | API Integration Day 2 | Advanced API Integration and Demos |
+| 📁 [Session 20](./Session%2020%20-%20AI_Agents_Development) | AI Agents Day 1 | Introduction to Autonomous AI Agents |
 
 </details>
 
@@ -180,8 +185,8 @@ Overall Progress: ████████████░░░░░░░░�
 | 03 | **Python Programming for AI** | 24 | 4 | ✅ |
 | 04 | **Python Framework (FastAPI)** | 18 | 3 | ⏳ |
 | 05 | **SQL & Relational Databases** | 12 | 2 | ✅ |
-| 06 | **AI & LLM Fundamentals** | 6 | 1 | ⏳ |
-| 07 | **AI-Assisted Dev & API Integration** | 12 | 2 | ⏳ |
+| 06 | **AI & LLM Fundamentals** | 6 | 1 | ✅ |
+| 07 | **AI-Assisted Dev & API Integration** | 12 | 2 | ✅ |
 | 08 | **AI Agents Development** | 18 | 3 | ⏳ |
 | 09 | **Freelancing** | 6 | 1 | ⏳ |
 |  | **Total** | **120** | **20** |  |
