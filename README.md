@@ -12,11 +12,11 @@
 
 <!-- Badges -->
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 <br/>
 
@@ -33,7 +33,7 @@
 
 This repository documents my journey through the **Information Technology Institute (ITI) Summer Training 2026** — a **120-hour intensive track** focused on **AI Agents Development using Python**.
 
-The program bridges the gap between **Full-Stack Web Development** fundamentals and cutting-edge **Artificial Intelligence** applications, culminating in building autonomous AI Agents.
+The program bridges the gap between **Full-Stack Web Development** fundamentals, backend engineering with **FastAPI**, and cutting-edge **Artificial Intelligence** applications, culminating in building autonomous AI Agents.
 
 ## 🖼️ Track Overview
 
@@ -48,30 +48,30 @@ The program bridges the gap between **Full-Stack Web Development** fundamentals 
 <table align="center">
   <tr>
     <td align="center" width="140">
+      <img src="https://skillicons.dev/icons?i=py" width="48" height="48" alt="Python" />
+      <br><strong>Python</strong>
+    </td>
+    <td align="center" width="140">
+      <img src="https://skillicons.dev/icons?i=fastapi" width="48" height="48" alt="FastAPI" />
+      <br><strong>FastAPI</strong>
+    </td>
+    <td align="center" width="140">
+      <img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" />
+      <br><strong>PostgreSQL</strong>
+    </td>
+    <td align="center" width="140">
+      <img src="https://skillicons.dev/icons?i=js" width="48" height="48" alt="JavaScript" />
+      <br><strong>JavaScript</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="140">
       <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
       <br><strong>HTML5</strong>
     </td>
     <td align="center" width="140">
       <img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="CSS3" />
       <br><strong>CSS3</strong>
-    </td>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=js" width="48" height="48" alt="JavaScript" />
-      <br><strong>JavaScript</strong>
-    </td>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=py" width="48" height="48" alt="Python" />
-      <br><strong>Python</strong>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=fastapi" width="48" height="48" alt="FastAPI" />
-      <br><strong>FastAPI</strong>
-    </td>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=sqlite" width="48" height="48" alt="SQL" />
-      <br><strong>SQL</strong>
     </td>
     <td align="center" width="140">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" width="48" height="48" alt="Jupyter" />
@@ -89,7 +89,7 @@ The program bridges the gap between **Full-Stack Web Development** fundamentals 
 ## 📊 Training Progress
 
 ```
-Overall Progress: ██████████████░░░░░░░  70% (84/120 hours)
+Overall Progress: █████████████████░░░  85% (102/120 hours)
 ```
 
 | Phase | Status | Hours |
@@ -97,11 +97,11 @@ Overall Progress: ██████████████░░░░░░�
 | 🟢 HTML5 & CSS3 | ✅ Completed | 6/6 |
 | 🟢 JavaScript Essentials | ✅ Completed | 18/18 |
 | 🟢 Python Programming for AI | ✅ Completed | 24/24 |
-| ⚪ Python Framework (FastAPI) | ⏳ Upcoming | 0/18 |
-| 🟢 SQL & Relational Databases | ✅ Completed | 12/12 |
+| 🟢 SQL & Relational Databases | ✅ Completed | 18/18 |
 | 🟢 AI & LLM Fundamentals | ✅ Completed | 6/6 |
 | 🟢 AI-Assisted Dev & API Integration | ✅ Completed | 12/12 |
-| 🟡 AI Agents Development | ⏳ In Progress | 6/18 |
+| 🟢 AI Agents Development | ✅ Completed | 18/18 |
+| 🟡 Python Framework (FastAPI) | ⏳ In Progress | 6/18 |
 | ⚪ Freelancing | ⏳ Upcoming | 0/6 |
 
 ---
@@ -114,8 +114,8 @@ Overall Progress: ██████████████░░░░░░�
 
 | Session | Topic | Description |
 | :--- | :--- | :--- |
-| 📁 [Session 1](./Session%201%20-%20Html%26CSS) | HTML & CSS Basics | Introduction to HTML structure, semantic elements, and CSS fundamentals |
-| 📁 [Session 2](./Session%202%20-%20Html%26CSS) | Advanced HTML5 & CSS3 | Responsive design, Flexbox, CSS Grid, and advanced styling techniques |
+| 📁 [Session 01](./Session%2001%20-%20Html%26CSS) | HTML & CSS Basics | Introduction to HTML structure, semantic elements, and CSS fundamentals |
+| 📁 [Session 02](./Session%2002%20-%20Html%26CSS) | Advanced HTML5 & CSS3 | Responsive design, Flexbox, CSS Grid, and advanced styling techniques |
 
 </details>
 
@@ -125,22 +125,21 @@ Overall Progress: ██████████████░░░░░░�
 
 | Session | Topic | Description |
 | :--- | :--- | :--- |
-| 📁 [Session 3](./Session%203%20-%20JS) | JS Fundamentals | Variables, data types, operators, control flow, and problem-solving labs |
-| 📁 [Session 4](./Session%204%20-%20JS) | JS Advanced Concepts | Functions, scope, closures, and advanced logic |
-| 📁 [Session 5](./Session%205%20-%20JS) | DOM Manipulation | DOM traversal, event handling, and dynamic page interactions |
-| 📁 [Session 6](./Session%206%20-%20JS) | Arrays & Strings | Array methods, string manipulation, and custom utility functions |
-| 📁 [Session 7](./Session%207%20-%20JS) | Advanced DOM Projects | Advanced DOM manipulation, interactive To-Do list organizer |
+| 📁 [Session 03](./Session%2003%20-%20JS) | JS Fundamentals | Variables, data types, operators, control flow, and problem-solving labs |
+| 📁 [Session 04](./Session%2004%20-%20JS) | JS Advanced Concepts | Functions, scope, closures, and advanced logic |
+| 📁 [Session 05](./Session%205%20-%20JS) | DOM Manipulation | DOM traversal, event handling, and dynamic page interactions |
+| 📁 [Session 06](./Session%206%20-%20JS) | Arrays & Strings | Array methods, string manipulation, and custom utility functions |
+| 📁 [Session 07](./Session%207%20-%20JS) | Advanced DOM Projects | Advanced DOM manipulation, interactive To-Do list organizer |
 
 </details>
 
 <details>
 <summary><strong>🐍 Phase 3 — Python Programming for AI</strong></summary>
 <br/>
-
 | Session | Topic | Description |
 | :--- | :--- | :--- |
-| 📁 [Session 8](./Session%208%20-%20PY) | Python Foundations | Variables, strings, lists, tuples, dictionaries, and Python basics for AI |
-| 📁 [Session 9](./Session%209%20-%20PY) | Python Data Structures | Lists, dictionaries, scope, functions, and practical exercises |
+| 📁 [Session 08](./Session%2008%20-%20PY) | Python Foundations | Variables, strings, lists, tuples, dictionaries, and Python basics for AI |
+| 📁 [Session 09](./Session%209%20-%20PY) | Python Data Structures | Lists, dictionaries, scope, functions, and practical exercises |
 | 📁 [Session 10](./Session%2010%20-%20PY) | Python Day 3 | Functions, modules, and advanced Python concepts |
 | 📁 [Session 11](./Session%2011%20-%20PY) | OOP in Python | Classes, inheritance, polymorphism, encapsulation, and properties |
 | 📁 [Session 12](./Session%2012%20-%20PY) | Advanced Python | Advanced Python topics and practice |
@@ -149,26 +148,57 @@ Overall Progress: ██████████████░░░░░░�
 </details>
 
 <details>
-<summary><strong>🗄️ Phase 4 — SQL & Relational Databases</strong></summary>
+<summary><strong>🗄️ Phase 4 — SQL & Relational Databases (PostgreSQL)</strong></summary>
 <br/>
 
 | Session | Topic | Description |
 | :--- | :--- | :--- |
 | 📁 [Session 14](./Session%2014%20-%20PostgreSQL) | PostgreSQL Day 1 | Introduction to PostgreSQL and Relational Databases |
 | 📁 [Session 15](./Session%2015-%20PostgreSQL) | PostgreSQL Day 2 | Constraints, Relationships, Referential Integrity, and Labs |
+| 📁 [Session 16](./Session%2016-%20PostgreSQL) | PostgreSQL Day 3 | Advanced queries, joins, aggregations, and practical database solutions |
 
 </details>
 
 <details>
-<summary><strong>🚀 Phase 5 — AI & Agents Development</strong></summary>
+<summary><strong>🧠 Phase 5 — AI & LLM Fundamentals</strong></summary>
 <br/>
 
 | Session | Topic | Description |
 | :--- | :--- | :--- |
-| 📁 [Session 17](./Session%2017%20-%20GenAI_Prompt_Engineering) | AI & LLM Fundamentals | Generative AI concepts and Prompt Engineering |
-| 📁 [Session 18](./Session%2018%20-%20AIDev_APIIntegration) | API Integration Day 1 | AI-Assisted Development and API Integration |
-| 📁 [Session 19](./Session%2019%20-%20AIDev_APIIntegration) | API Integration Day 2 | Advanced API Integration and Demos |
-| 📁 [Session 20](./Session%2020%20-%20AI_Agents_Development) | AI Agents Day 1 | Introduction to Autonomous AI Agents |
+| 📁 [Session 17](./Session%2017%20-%20GenAI_Prompt_Engineering) | Generative AI & Prompt Engineering | LLM fundamentals, effective prompt engineering, zero-shot and few-shot techniques |
+
+</details>
+
+<details>
+<summary><strong>🔌 Phase 6 — AI-Assisted Dev & API Integration</strong></summary>
+<br/>
+
+| Session | Topic | Description |
+| :--- | :--- | :--- |
+| 📁 [Session 18](./Session%2018%20-%20AIDev_APIIntegration) | API Integration Day 1 | AI-Assisted Development, Gemini & OpenAI API integration |
+| 📁 [Session 19](./Session%2019%20-%20AIDev_APIIntegration) | API Integration Day 2 | Chat memory, structured JSON output, streaming responses, and full AI app |
+
+</details>
+
+<details>
+<summary><strong>🤖 Phase 7 — AI Agents Development</strong></summary>
+<br/>
+
+| Session | Topic | Description |
+| :--- | :--- | :--- |
+| 📁 [Session 20](./Session%2020%20-%20AI_Agents_Development) | AI Agents Day 1 | Introduction to Autonomous AI Agents architecture and tool use |
+| 📁 [Session 21](./Session%2021%20-%20AI_Agents_Development) | AI Agents Day 2 | Multi-step reasoning, agent execution loops, and external tool calling |
+| 📁 [Session 22](./Session%2022%20-%20AI_Agents_Development) | AI Agents Day 3 | Advanced autonomous agent workflows, task planning, and evaluation |
+
+</details>
+
+<details open>
+<summary><strong>🚀 Phase 8 — Python Framework (FastAPI)</strong></summary>
+<br/>
+
+| Session | Topic | Description |
+| :--- | :--- | :--- |
+| 📁 [Session 23](./Session%2023%20FastAPI) | FastAPI Day 1 — Documents REST API | In-memory CRUD operations (`GET`, `POST`, `PUT`, `DELETE`), Query Parameters, HTTP Status Codes, and Swagger UI |
 
 </details>
 
@@ -183,11 +213,11 @@ Overall Progress: ██████████████░░░░░░�
 | 01 | **HTML5 & CSS3** | 6 | 1 | ✅ |
 | 02 | **JavaScript Essentials** | 18 | 3 | ✅ |
 | 03 | **Python Programming for AI** | 24 | 4 | ✅ |
-| 04 | **Python Framework (FastAPI)** | 18 | 3 | ⏳ |
-| 05 | **SQL & Relational Databases** | 12 | 2 | ✅ |
-| 06 | **AI & LLM Fundamentals** | 6 | 1 | ✅ |
-| 07 | **AI-Assisted Dev & API Integration** | 12 | 2 | ✅ |
-| 08 | **AI Agents Development** | 18 | 3 | ⏳ |
+| 04 | **SQL & Relational Databases** | 18 | 3 | ✅ |
+| 05 | **AI & LLM Fundamentals** | 6 | 1 | ✅ |
+| 06 | **AI-Assisted Dev & API Integration** | 12 | 2 | ✅ |
+| 07 | **AI Agents Development** | 18 | 3 | ✅ |
+| 08 | **Python Framework (FastAPI)** | 18 | 3 | ⏳ |
 | 09 | **Freelancing** | 6 | 1 | ⏳ |
 |  | **Total** | **120** | **20** |  |
 
