@@ -185,7 +185,7 @@ Overall Progress  █████████████████░░░�
 
 | Session | Topic | Description | Resources |
 | :--- | :--- | :--- | :---: |
-| 📁 [Session 18](./Session%2018%20-%20AIDev_APIIntegration) | API Integration Day 1 | AI-Assisted Development, Gemini & OpenAI API integration | 📄 Lecture + Lab |
+| 📁 [Session 18](./Session%2018%20-%20AIDev_APIIntegration) | API Integration Day 1 | AI-Assisted Development, Gemini & OpenAI API integration | 📄 Lecture + Lab + ✅ Solve |
 | 📁 [Session 19](./Session%2019%20-%20AIDev_APIIntegration) | API Integration Day 2 | Chat memory, structured JSON output, streaming responses, and full AI app | 📄 Lecture + Lab + ✅ Solve |
 
 </details>
@@ -196,9 +196,9 @@ Overall Progress  █████████████████░░░�
 
 | Session | Topic | Description | Resources |
 | :--- | :--- | :--- | :---: |
-| 📁 [Session 20](./Session%2020%20-%20AI_Agents_Development) | AI Agents Day 1 | Introduction to Autonomous AI Agents architecture and tool use | 📄 Lecture + Lab |
-| 📁 [Session 21](./Session%2021%20-%20AI_Agents_Development) | AI Agents Day 2 | Multi-step reasoning, agent execution loops, and external tool calling | 📄 Lecture + Lab |
-| 📁 [Session 22](./Session%2022%20-%20AI_Agents_Development) | AI Agents Day 3 | Advanced autonomous agent workflows, task planning, and evaluation | 📄 Lecture + Lab |
+| 📁 [Session 20](./Session%2020%20-%20AI_Agents_Development) | AI Agents Day 1 | Introduction to Autonomous AI Agents architecture and tool use | 📄 Lecture + Lab + ✅ Solve |
+| 📁 [Session 21](./Session%2021%20-%20AI_Agents_Development) | AI Agents Day 2 | Multi-step reasoning, agent execution loops, and external tool calling | 📄 Lecture + Lab + ✅ Solve |
+| 📁 [Session 22](./Session%2022%20-%20AI_Agents_Development) | AI Agents Day 3 | Advanced autonomous agent workflows, task planning, and evaluation | 📄 Lecture + Lab + ✅ Solve |
 
 </details>
 
@@ -209,6 +209,8 @@ Overall Progress  █████████████████░░░�
 | Session | Topic | Description | Resources |
 | :--- | :--- | :--- | :---: |
 | 📁 [Session 23](./Session%2023%20FastAPI) | FastAPI Day 1 — Documents REST API | In-memory CRUD operations (`GET`, `POST`, `PUT`, `DELETE`), Query Parameters, HTTP Status Codes, and Swagger UI | 📄 Lecture + Lab + ✅ Solve |
+| 📁 [Session 24](./Session%2024%20FastApI) | FastAPI Day 2 — Database Integration | Database connection, Dependency Injection (`Depends`), and Pydantic schemas | 📄 Lecture + Lab |
+| 📁 [Session 25](./Session%2025%20FastApI) | FastAPI Day 3 — ORM & Advanced API | SQLAlchemy ORM, database migrations, and production patterns | 📄 Lecture + Lab |
 
 </details>
 
