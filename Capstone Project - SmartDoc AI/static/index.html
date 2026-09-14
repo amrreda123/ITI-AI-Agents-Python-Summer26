@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartDoc AI — مركز المستندات الذكي ووكيل الذكاء الاصطناعي المستقل</title>
+  <meta name="description" content="إدارة المستندات المدعومة بالذكاء الاصطناعي، التلخيص المهيكل باستخدام Gemini، ووكيل مستقل." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="/static/style.css" />
+  <style>
+    body { font-family: 'Cairo', 'Plus Jakarta Sans', sans-serif; }
+    .sidebar { border-right: none; border-left: 1px solid var(--border); }
+    .text-right { text-align: left; } /* inverse for rtl */
+    .btn-icon { margin-left: 0; margin-right: 0.5rem; }
+    .app-layout { direction: rtl; }
+    .search-box i { left: auto; right: 1rem; }
+    .search-box input { padding-left: 1rem; padding-right: 2.5rem; }
+  </style>
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SmartDoc <span>AI</span></h2>
+          <p class="tagline">منصة مشروع التخرج ITI</p>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <button class="nav-item active" data-tab="docs-tab" id="nav-docs-btn">
+          <i class="fa-solid fa-folder-open"></i>
+          <span>المستندات</span>
+        </button>
+        <button class="nav-item" data-tab="create-tab" id="nav-create-btn">
+          <i class="fa-solid fa-plus-circle"></i>
+          <span>جديد ورفع</span>
+        </button>
+        <button class="nav-item" data-tab="agent-tab" id="nav-agent-btn">
+          <i class="fa-solid fa-robot"></i>
+          <span>وكيل الذكاء الاصطناعي</span>
+          <span class="badge-pulse">مباشر</span>
+        </button>
+        <button class="nav-item" data-tab="api-tab" id="nav-api-btn">
+          <i class="fa-solid fa-bolt"></i>
+          <span>وثائق الـ API</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="system-status">
+          <span class="status-dot online"></span>
+          <span class="status-label">متصل بالخلفية</span>
+        </div>
+        <a href="/docs" target="_blank" class="docs-link" id="view-swagger-btn">
+          <i class="fa-solid fa-code"></i> Swagger UI
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Navbar -->
+      <header class="topbar">
+        <div class="topbar-title">
+          <h1 id="page-title">مستودع المستندات</h1>
+          <p id="page-subtitle">إدارة، تحليل، والاستعلام عن قاعدة معرفتك</p>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="global-search" placeholder="بحث سريع عن المستندات..." />
+          </div>
+          <button class="btn btn-primary" id="quick-create-btn">
+            <i class="fa-solid fa-plus"></i> مستند جديد
+          </button>
+        </div>
+      </header>
+
+      <!-- Stats Overview Banner -->
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon purple">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+          <div class="stat-info">
+            <h3 id="stat-total-docs">0</h3>
+            <p>إجمالي المستندات</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon emerald">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <div class="stat-info">
+            <h3 id="stat-analyzed-docs">0</h3>
+            <p>ملخص بالذكاء الاصطناعي</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon cyan">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <div class="stat-info">
+            <h3 id="stat-agent-tools">3 أدوات</h3>
+            <p>وكيل قراءة فقط نشط</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon amber">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div class="stat-info">
+            <h3>Alembic v2</h3>
+            <p>تم تهجير SQLite</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 1: Documents Explorer -->
+      <section class="tab-content active" id="docs-tab">
+        <div class="table-container glass-panel">
+          <div class="table-header">
+            <div class="table-title">
+              <h2>المستندات المخزنة</h2>
+              <span class="count-badge" id="docs-count-badge">0 عناصر</span>
+            </div>
+            <div class="table-filters">
+              <select id="priority-filter" class="custom-select">
+                <option value="all">جميع الأولويات</option>
+                <option value="5">أولوية 5 (حرجة)</option>
+                <option value="4">أولوية 4 (عالية)</option>
+                <option value="3">أولوية 3 (متوسطة)</option>
+                <option value="2">أولوية 2 (منخفضة)</option>
+                <option value="1">أولوية 1 (أقل)</option>
+              </select>
+              <button class="btn btn-secondary" id="refresh-docs-btn">
+                <i class="fa-solid fa-rotate"></i> تحديث
+              </button>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>المعرف</th>
+                  <th>العنوان</th>
+                  <th>الأولوية</th>
+                  <th>تحليل الذكاء الاصطناعي</th>
+                  <th>الوصف</th>
+                  <th class="text-right" style="text-align: left;">الإجراءات</th>
+                </tr>
+              </thead>
+              <tbody id="documents-tbody">
+                <!-- Rows injected dynamically via JS -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="empty-state" id="empty-state" style="display: none;">
+            <i class="fa-solid fa-folder-open"></i>
+            <h3>لم يتم العثور على مستندات</h3>
+            <p>قم بإنشاء مستندك الأول أو رفع ملف نصي للبدء.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: Create & Upload -->
+      <section class="tab-content" id="create-tab">
+        <div class="grid-2col">
+          <!-- Manual Form -->
+          <div class="card glass-panel">
+            <div class="card-header">
+              <i class="fa-solid fa-pen-to-square"></i>
+              <div>
+                <h2>إنشاء مستند</h2>
+                <p>إضافة مستند مهيكل مع أولوية مخصصة</p>
+              </div>
+            </div>
+
+            <form id="create-doc-form" class="app-form">
+              <div class="form-group">
+                <label for="doc-title">عنوان المستند <span class="req">*</span></label>
+                <input type="text" id="doc-title" placeholder="مثل: دليل بنية النظام" required minlength="3" maxlength="120" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group flex-1">
+                  <label for="doc-priority">مستوى الأولوية</label>
+                  <select id="doc-priority" class="custom-select">
+                    <option value="1">1 - أقل</option>
+                    <option value="2">2 - منخفضة</option>
+                    <option value="3" selected>3 - متوسطة</option>
+                    <option value="4">4 - عالية</option>
+                    <option value="5">5 - حرجة</option>
+                  </select>
+                </div>
+                <div class="form-group flex-2">
+                  <label for="doc-desc">وصف قصير (اختياري)</label>
+                  <input type="text" id="doc-desc" placeholder="ملاحظة تعريفية موجزة" maxlength="250" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="doc-content">محتوى المستند <span class="req">*</span></label>
+                <textarea id="doc-content" rows="7" placeholder="اكتب أو انسخ محتوى المستند هنا..." required minlength="1"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submit-create-btn">
+                <i class="fa-solid fa-floppy-disk"></i> حفظ المستند (201 Created)
+              </button>
+            </form>
+          </div>
+
+          <!-- File Upload Box -->
+          <div class="card glass-panel">
+            <div class="card-header">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <div>
+                <h2>رفع مستند نصي</h2>
+                <p>رفع ملف .txt / text/plain مباشرة إلى SQLite</p>
+              </div>
+            </div>
+
+            <div class="upload-dropzone" id="upload-dropzone">
+              <input type="file" id="file-input" accept=".txt,text/plain" hidden />
+              <div class="dropzone-icon">
+                <i class="fa-solid fa-file-arrow-up"></i>
+              </div>
+              <h3>اسحب وأفلت الملف النصي هنا</h3>
+              <p>أو انقر لاختيار ملف من جهازك (ملفات .txt فقط)</p>
+              <div class="selected-file" id="selected-file-info" style="display: none;">
+                <i class="fa-solid fa-file-lines"></i>
+                <span id="selected-filename">filename.txt</span>
+                <button type="button" class="btn-icon" id="clear-file-btn"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+              <button type="button" class="btn btn-secondary mt-3" id="choose-file-btn">
+                <i class="fa-solid fa-magnifying-glass"></i> اختيار ملف نصي
+              </button>
+            </div>
+
+            <button type="button" class="btn btn-success btn-full mt-4" id="upload-file-btn" disabled>
+              <i class="fa-solid fa-upload"></i> معالجة ورفع (/documents/upload)
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: AI Agent Interactive Chat -->
+      <section class="tab-content" id="agent-tab">
+        <div class="agent-layout glass-panel">
+          <!-- Chat Messages Area -->
+          <div class="chat-header">
+            <div class="agent-avatar">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="agent-info">
+              <h2>وكيل SmartDoc (قراءة فقط)</h2>
+              <p>مزود بأدوات <code>list_documents</code>، <code>get_document</code>، و <code>search_documents</code></p>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="clear-chat-btn">
+              <i class="fa-solid fa-trash-can"></i> مسح
+            </button>
+          </div>
+
+          <div class="chat-messages" id="chat-messages">
+            <div class="chat-bubble bot">
+              <div class="bubble-header">
+                <span class="bot-badge"><i class="fa-solid fa-shield-halved"></i> وكيل SmartDoc</span>
+                <span class="time">الآن</span>
+              </div>
+              <div class="bubble-body">
+                أهلاً بك! أنا <strong>وكيل المستندات للقراءة فقط</strong>. يمكنني البحث في السجلات المحفوظة، فحص مستندات محددة، وتلخيص المعلومات باستخدام أدوات مستقلة مع حماية آمنة بحد أقصى للخطوات <code>MAX_STEPS = 5</code>.
+              </div>
+            </div>
+          </div>
+
+          <!-- Suggested Prompts -->
+          <div class="prompt-chips">
+            <button class="chip" data-prompt="List all available documents in the system.">
+              📑 سرد جميع المستندات
+            </button>
+            <button class="chip" data-prompt="Search for documents discussing FastAPI and explain their key ideas.">
+              🔍 البحث في ملاحظات FastAPI
+            </button>
+            <button class="chip" data-prompt="Find the document with highest priority and give me its full details.">
+              ⭐ التحقق من مستند الأولوية الأعلى
+            </button>
+          </div>
+
+          <!-- Input Bar -->
+          <form id="agent-chat-form" class="chat-input-container">
+            <input type="text" id="agent-message-input" placeholder="اسأل الوكيل أي شيء عن مستنداتك المحفوظة..." required autocomplete="off" />
+            <button type="submit" class="btn btn-primary" id="send-agent-btn">
+              <i class="fa-solid fa-paper-plane"></i> إرسال
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- TAB 4: API Docs & Overview -->
+      <section class="tab-content" id="api-tab">
+        <div class="card glass-panel">
+          <div class="card-header">
+            <i class="fa-solid fa-network-wired"></i>
+            <div>
+              <h2>المرجع الخاص بواجهة برمجة التطبيقات (API)</h2>
+              <p>استكشف جميع نقاط النهاية المتاحة ووثائق الاختبار</p>
+            </div>
+          </div>
+
+          <div class="api-links-grid">
+            <a href="/docs" target="_blank" class="api-card">
+              <div class="api-card-icon swagger"><i class="fa-solid fa-bolt"></i></div>
+              <h3>واجهة Swagger التفاعلية</h3>
+              <p>اختبر نقاط النهاية الحية، والمخططات، وجرب العمليات على <code>/docs</code></p>
+              <span class="link-arrow">افتح Swagger <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </a>
+
+            <a href="/redoc" target="_blank" class="api-card">
+              <div class="api-card-icon redoc"><i class="fa-solid fa-book"></i></div>
+              <h3>مواصفات ReDoc</h3>
+              <p>وثائق API واضحة وسهلة القراءة ومخططات على <code>/redoc</code></p>
+              <span class="link-arrow">افتح ReDoc <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </a>
+
+            <a href="/openapi.json" target="_blank" class="api-card">
+              <div class="api-card-icon json"><i class="fa-solid fa-code"></i></div>
+              <h3>مخطط OpenAPI JSON</h3>
+              <p>تعريف مخطط JSON الأساسي الموحد لإنشاء العميل على <code>/openapi.json</code></p>
+              <span class="link-arrow">عرض JSON <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Document Detail / AI Analysis Modal -->
+  <div class="modal-overlay" id="doc-modal" style="display: none;">
+    <div class="modal-content glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="badge priority-badge" id="modal-priority-badge">أولوية 1</span>
+          <h2 id="modal-doc-title">تفاصيل المستند</h2>
+        </div>
+        <button class="btn-icon close-modal" id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3><i class="fa-solid fa-align-left"></i> المحتوى الكامل للمستند</h3>
+          <div class="doc-content-box" id="modal-doc-content"></div>
+        </div>
+
+        <div class="modal-section mt-4">
+          <div class="section-flex-header">
+            <h3><i class="fa-solid fa-wand-magic-sparkles"></i> تحليل Gemini المهيكل</h3>
+            <button class="btn btn-primary btn-sm" id="modal-analyze-btn">
+              <i class="fa-solid fa-bolt"></i> تشغيل / إعادة تحليل بواسطة Gemini
+            </button>
+          </div>
+
+          <div id="modal-ai-loading" class="ai-loading-box" style="display: none;">
+            <div class="spinner"></div>
+            <p>يقوم Gemini بتنفيذ تحليل المستند باستخدام R-T-C-F...</p>
+          </div>
+
+          <div id="modal-ai-result" class="ai-result-box" style="display: none;">
+            <div class="ai-result-meta">
+              <span class="category-tag" id="ai-category">تقني</span>
+              <span class="suggested-priority" id="ai-suggested-priority">الأولوية المقترحة: 3</span>
+            </div>
+            
+            <div class="ai-summary-block">
+              <h4>الملخص:</h4>
+              <p id="ai-summary-text"></p>
+            </div>
+
+            <div class="ai-keypoints-block">
+              <h4>النقاط الرئيسية:</h4>
+              <ul id="ai-keypoints-list"></ul>
+            </div>
+          </div>
+
+          <div id="modal-ai-empty" class="ai-empty-box">
+            <p>لم يتم إجراء أي تحليل للذكاء الاصطناعي بعد. انقر على <strong>تشغيل / إعادة تحليل بواسطة Gemini</strong> لبدء الاستخراج المهيكل.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modal-close-footer-btn">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

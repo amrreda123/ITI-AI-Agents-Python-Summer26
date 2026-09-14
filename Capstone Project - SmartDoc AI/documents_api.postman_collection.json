@@ -1,0 +1,266 @@
+{
+  "info": {
+    "name": "SmartDoc AI",
+    "description": "Cross-Course Capstone Project API collection for SmartDoc AI covering REST CRUD, File Upload, Alembic Migrations, Gemini Structured Analysis, and Read-Only AI Agent.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:8000",
+      "type": "string"
+    },
+    {
+      "key": "document_id",
+      "value": "1",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "GET Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": ["{{base_url}}"],
+              "path": ["health"]
+            },
+            "description": "Checks system operational health status (Expected: 200 OK)."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Documents CRUD",
+      "item": [
+        {
+          "name": "GET List Documents",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/documents",
+              "host": ["{{base_url}}"],
+              "path": ["documents"]
+            },
+            "description": "Retrieve all stored documents (Expected: 200 OK)."
+          }
+        },
+        {
+          "name": "POST Create Document (Valid)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"FastAPI and AI Architecture\",\n  \"content\": \"FastAPI enables building robust asynchronous microservices. When paired with LLMs and AI Agents, it provides high-throughput structured data processing and safe tool execution.\",\n  \"priority\": 3,\n  \"description\": \"Architecture notes on AI Agents integration\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/documents",
+              "host": ["{{base_url}}"],
+              "path": ["documents"]
+            },
+            "description": "Create a new document with valid payload (Expected: 201 Created)."
+          }
+        },
+        {
+          "name": "POST Create Document (Invalid - 422)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"A\",\n  \"content\": \"\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/documents",
+              "host": ["{{base_url}}"],
+              "path": ["documents"]
+            },
+            "description": "Create document with invalid body violating Pydantic min_length (Expected: 422 Unprocessable Entity)."
+          }
+        },
+        {
+          "name": "GET Document By ID (200)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/documents/{{document_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["documents", "{{document_id}}"]
+            },
+            "description": "Retrieve an existing document by ID (Expected: 200 OK)."
+          }
+        },
+        {
+          "name": "GET Document By ID (Missing - 404)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/documents/999999",
+              "host": ["{{base_url}}"],
+              "path": ["documents", "999999"]
+            },
+            "description": "Attempt to get a non-existent document (Expected: 404 Not Found)."
+          }
+        },
+        {
+          "name": "PUT Update Document (200)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"priority\": 5,\n  \"description\": \"Updated high priority document notes\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/documents/{{document_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["documents", "{{document_id}}"]
+            },
+            "description": "Update specific fields of an existing document (Expected: 200 OK)."
+          }
+        },
+        {
+          "name": "DELETE Document (200)",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/documents/{{document_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["documents", "{{document_id}}"]
+            },
+            "description": "Delete a document by ID (Expected: 200 OK)."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Document File Upload",
+      "item": [
+        {
+          "name": "POST Upload Text Document (201)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "sample_document.txt"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/documents/upload",
+              "host": ["{{base_url}}"],
+              "path": ["documents", "upload"]
+            },
+            "description": "Upload a text/plain file and extract contents into SQLite (Expected: 201 Created)."
+          }
+        },
+        {
+          "name": "POST Upload Unsupported File (400)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "unsupported.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/documents/upload",
+              "host": ["{{base_url}}"],
+              "path": ["documents", "upload"]
+            },
+            "description": "Attempt to upload a non-text file (Expected: 400 Bad Request)."
+          }
+        }
+      ]
+    },
+    {
+      "name": "AI Services",
+      "item": [
+        {
+          "name": "POST Analyze Document (200)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/documents/{{document_id}}/analyze",
+              "host": ["{{base_url}}"],
+              "path": ["documents", "{{document_id}}", "analyze"]
+            },
+            "description": "Trigger Gemini structured document analysis and persist summary into ai_summary (Expected: 200 OK)."
+          }
+        },
+        {
+          "name": "POST Analyze Missing Document (404)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/documents/999999/analyze",
+              "host": ["{{base_url}}"],
+              "path": ["documents", "999999", "analyze"]
+            },
+            "description": "Trigger analysis on non-existent document (Expected: 404 Not Found)."
+          }
+        },
+        {
+          "name": "POST Ask Read-Only AI Agent (200)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"What documents are currently stored in the database? Give me their titles and a brief summary of each.\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/agent/ask",
+              "host": ["{{base_url}}"],
+              "path": ["agent", "ask"]
+            },
+            "description": "Send a natural language question to the read-only AI agent with tool-calling capabilities (Expected: 200 OK)."
+          }
+        }
+      ]
+    }
+  ]
+}
